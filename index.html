@@ -10,18 +10,20 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Simone V. Spitzenberger</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#famiglia-valduga">Famiglia Valduga</a></li>
-                <li><a href="#SH-estruturas-metalicas">SH Estruturas Metalicas</a></li>
-                <li><a href="#engenharia-estruturas-metalicas">Engenharia - Estruturas Metalicas</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Simone V. Spitzenberger</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#famiglia-valduga">Famiglia Valduga</a></li>
+                    <li><a href="#SH-estruturas-metalicas">SH Estruturas Metálicas</a></li>
+                    <li><a href="#engenharia-estruturas-metalicas">Engenharia - Estruturas Metálicas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <nav id="hamburger-nav">
         <div class="logo">Simone V. Spitzenberger</div>
         <div class="hamburger-menu">
@@ -32,9 +34,9 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
-                <li><a href="#familia-valduga" onclick="toggleMenu()">Familia Valduga</a></li>
-                <li><a href="#SH-estruturas-metalicas" onclick="toggleMenu()">SH Estruturas Metalicas</a></li>
-                <li><a href="#engenharia-estruturas-metalicas" onclick="toggleMenu()">Engenharia - Estruturas Metalicas</a></li>
+                <li><a href="#familia-valduga" onclick="toggleMenu()">Família Valduga</a></li>
+                <li><a href="#SH-estruturas-metalicas" onclick="toggleMenu()">SH Estruturas Metálicas</a></li>
+                <li><a href="#engenharia-estruturas-metalicas" onclick="toggleMenu()">Engenharia - Estruturas Metálicas</a></li>
                 <li><a href="#contact">Contato</a></li>
             </div>
         </div>
@@ -44,11 +46,11 @@
             <img src="./assets/profile-pic.png" alt="Simone profile picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Ola, Eu sou</p>
-            <h1 class="title">Simone Von Spitzenberger</h1>
+            <p class="section__text__p3">Olá, Eu sou</p>
+            <h1 class="title-perfil">Simone Von Spitzenberger</h1>
             <p class="section__text__p2">Engenheira Civil</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-simone.pdf')">Baixar Curriculo</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-simone.pdf')">Baixar Currículo</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
             </div>
             <div id="socials-container">
@@ -57,7 +59,7 @@
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Saiba Mais</p>
+        <p class="section__text__p1"></p>
         <h1 class="title">Sobre Mim</h1>
         <div class="section-container">
             <!--  <div class="section__pic-container">
@@ -65,34 +67,58 @@
             </div>  -->  <!-- Sem foto de perfil -->
             <div  class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Icone de Experiencia" class="icon">
-                        <h3>Experiencia Profissional</h3>
-                        <p>Tempo<br/>Experiencias Simone</p> <!-- Colocar as experiencias profissionais da Simone aqui -->
+                    <div class="details-container-sobre">
+                        <img src="./assets/experience.png" alt="Ícone de Experiência" class="icon">
+                        <h3>Experiência Profissional</h3>
+                        <br/>
+                        <p>30+ Anos</p>
+                        <p>Engenheira Civil</p> <!-- Colocar as experiências profissionais da Simone aqui -->
                     </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Icone de Experiencia" class="icon">
-                        <h3>Educacao</h3>
-                        <p>Educacao Simone</p> <!-- Colocar a educacao da Simone aqui -->
+                    <div class="details-container-sobre">
+                        <img src="./assets/education.png" alt="Ícone de Educação" class="icon">
+                        <h3>Educação</h3>
+                        <br/>
+                        <p>Graduada em Engenharia Civil</p>
+                        <p>Pós-Graduada em Engenharia Civil</p> <!-- Colocar a educação da Simone aqui -->
+                    </div>
+                    <div class="details-container-sobre">
+                        <img src="./assets/checkmark.png" alt="Icone de Acervo" class="icon">
+                        <h3 class="valduga-sub-title">Acervo Tecnico</h3>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>Linhas de Transmissao</p>
+                                    <p>Passarelas</p>
+                                    <p>Pontes Flutuantes</p>
+                                    <p>Estruturas Nauticas</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quam soluta laboriosam est molestiae. Nisi voluptatem odit, facilis deleniti, corrupti culpa dolore ex quidem provident pariatur nesciunt dolores soluta alias.</p>
+                    <p class="paragrafo-sobre-mim">Olá, meu nome é Simone e gostaria de compartilhar um pouco sobre minha trajetória profissional.
+
+                        Tenho ampla experiência no desenvolvimento de projetos, cálculos de estruturas metálicas, orçamentos, montagens e acompanhamento de obras. Também sou especializada em projetos ambientais, focando em energias renováveis, com desenvolvimento e aprovação junto a órgãos competentes.
+                        
+                        No campo comercial e técnico, atuo em siderurgia, metalurgia, energia, agroindústria e obras industriais, incluindo múltiplos andares e portuárias. Minhas habilidades incluem liderança, negociação, administração de contratos e gerenciamento de obras turnkey. Desenvolvo soluções, analiso viabilidades, elaboro propostas técnico-comerciais, gerencio serviços e mantenho uma comunicação eficaz com clientes.
+                        
+                        Tenho um vasto acervo técnico em obras de linha de transmissão, passarelas, pontes flutuantes e estruturas náuticas. Trabalho com princípios éticos e em sinergia com a equipe para superar desafios e alcançar os melhores resultados.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#famiglia-valduga'">
     </section>
     <section id="famiglia-valduga">
-        <p class="section__text__p1">Famiglia</p>
-        <h1 class="title">Valduga</h1>
+        <p class="section__text__p1"></p> <!-- Só deixei essa linha para ter o padding top do parágrafo 'p' -->
+        <h1 class="title">Famiglia Valduga</h1>
         <div class="valduga-details-container">
             <div class="about-containers">
                 <div class="details-container">
                     <h2 class="valduga-sub-title">Vinhos</h2>
                     <div class="article-container">
                         <img src="./assets/wine.png" alt="Vinhos" class="article-pic">
-                        <p>Descricao Vinhos</p> <!-- Colocar a descricao dos vinhos aqui -->
+                        <p>Descrição Vinhos</p> <!-- Colocar a descrição dos vinhos aqui -->
                     </div>
                 </div>
             </div>
