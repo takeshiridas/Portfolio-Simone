@@ -10,20 +10,19 @@
 </head>
 
 <body>
-    <header>
-        <nav id="desktop-nav">
-            <div class="logo">Simone V. Spitzenberger</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#famiglia-valduga">Famiglia Valduga</a></li>
-                    <li><a href="#SH-estruturas-metalicas">SH Estruturas Metálicas</a></li>
-                    <li><a href="#engenharia-estruturas-metalicas">Engenharia - Estruturas Metálicas</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+
+    <nav id="desktop-nav">
+        <div class="logo">Simone V. Spitzenberger</div>
+        <div>
+            <ul class="nav-links">                    
+                <li><a href="#SH-estruturas-metalicas">SH Estruturas Metálicas</a></li>
+                <li><a href="#engenharia-estruturas-metalicas">Engenharia - Estruturas Metálicas</a></li>
+                <li><a href="#famiglia-valduga">Famiglia Valduga</a></li>
+                <li><a href="#about">Sobre Mim</a></li>                   
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
     <nav id="hamburger-nav">
         <div class="logo">Simone V. Spitzenberger</div>
         <div class="hamburger-menu">
@@ -33,31 +32,112 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
-                <li><a href="#familia-valduga" onclick="toggleMenu()">Família Valduga</a></li>
                 <li><a href="#SH-estruturas-metalicas" onclick="toggleMenu()">SH Estruturas Metálicas</a></li>
                 <li><a href="#engenharia-estruturas-metalicas" onclick="toggleMenu()">Engenharia - Estruturas Metálicas</a></li>
+                <li><a href="#famiglia-valduga" onclick="toggleMenu()">Famiglia Valduga</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
                 <li><a href="#contact">Contato</a></li>
             </div>
         </div>
     </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Simone profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p3">Olá, Eu sou</p>
-            <h1 class="title-perfil">Simone Von Spitzenberger</h1>
-            <p class="section__text__p2">Engenheira Civil</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-simone.pdf')">Baixar Currículo</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+    
+    <section id="SH-estruturas-metalicas" class="slideshow-section">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="./assets/ambev-ampliacao-mg.png" alt="Ampliacao Sete Lagoas - MG" style="width:100%">
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/simone-von-spitzenberger-a2164131/'">   
+            <div class="slide fade">
+                <img src="./assets/ambev-ampliacao-agudos-sp.png" alt="Ampliacao Agudos - SP" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/ambev-implementacao-cdd-bahia.png" alt="Implementacao CDD - Bahia" style="width:100%">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <p class="section__text__p1"></p>
+        <h1 class="title">SH Estruturas Metálicas</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/sh-estruturas-metalicas.png" alt="SH Estruturas Metálicas" class="section-pic">
+            </div>
+            <div class="text-container">
+                <p class="paragrafo">A SH Estruturas Metálicas é uma empresa especializada em projetos, fabricação e montagem de estruturas metálicas. Atuamos em diversos segmentos, como indústrias, comércios, residências, entre outros. Nossa equipe é formada por profissionais qualificados e experientes, garantindo a qualidade e segurança de nossos serviços.</p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#engenharia-estruturas-metalicas'">
+    </section>
+    
+    
+    <section id="engenharia-estruturas-metalicas">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Engenharia - Estruturas Metálicas</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/engenharia-estruturas-metalicas.png" alt="Engenharia - Estruturas Metálicas" class="section-pic">
+            </div>
+            <div class="text-container">
+                <p class="section__text__p1">A Engenharia de Estruturas Metálicas é uma área da engenharia civil que atua no desenvolvimento de projetos, cálculos e dimensionamento de estruturas metálicas. Essas estruturas são amplamente utilizadas na construção civil, devido à sua versatilidade, resistência e durabilidade. A equipe de engenheiros especializados em estruturas metálicas da SH Estruturas Metálicas está preparada para desenvolver soluções personalizadas e inovadoras para os mais diversos tipos de projetos.</p>
             </div>
         </div>
     </section>
+
+    <section id="famiglia-valduga">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Famiglia Valduga</h1>
+        <p class="paragrafo-representante">Sou representante de vendas corporativa do grupo Famiglia Valduga, faço vendas para empresas e vendas em volume</p>
+        <h2 class="valduga-sub-title">Empresas</h2>
+        <div class="valduga-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/casa-valduga.png" alt="Casa Valduga" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Casa Valduga</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-casa-valduga.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/casa-madeira.png" alt="Casa Madeira" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Casa Madeira</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-casa-madeira.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/ponto-nero.png" alt="Ponto Nero" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Ponto Nero</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-ponto-nero.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/domno-importadora.png" alt="Domno - Importadora" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Domno - Importadora</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-domno.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/brewine-leopoldina.png" alt="Brewine Leopoldina - Cervejaria" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Brewine Leopoldina - Cervejaria</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-brewine-leopoldina.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#about'">
+    </section>
+    
     <section id="about">
         <p class="section__text__p1"></p>
         <h1 class="title">Sobre Mim</h1>
@@ -69,28 +149,28 @@
                 <div class="about-containers">
                     <div class="details-container-sobre">
                         <img src="./assets/experience.png" alt="Ícone de Experiência" class="icon">
-                        <h3>Experiência Profissional</h3>
+                        <h3 class="sobre-sub-title">Experiência Profissional</h3>
                         <br/>
                         <p>30+ Anos</p>
                         <p>Engenheira Civil</p> <!-- Colocar as experiências profissionais da Simone aqui -->
                     </div>
                     <div class="details-container-sobre">
                         <img src="./assets/education.png" alt="Ícone de Educação" class="icon">
-                        <h3>Educação</h3>
+                        <h3 class="sobre-sub-title">Educação</h3>
                         <br/>
                         <p>Graduada em Engenharia Civil</p>
                         <p>Pós-Graduada em Engenharia Civil</p> <!-- Colocar a educação da Simone aqui -->
                     </div>
                     <div class="details-container-sobre">
-                        <img src="./assets/checkmark.png" alt="Icone de Acervo" class="icon">
-                        <h3 class="valduga-sub-title">Acervo Tecnico</h3>
+                        <img src="./assets/checkmark.png" alt="Ícone de Acervo" class="icon">
+                        <h3 class="sobre-sub-title">Acervo Técnico</h3>
                         <div class="article-container">
                             <article>
                                 <div>
-                                    <p>Linhas de Transmissao</p>
+                                    <p>Linhas de Transmissão</p>
                                     <p>Passarelas</p>
                                     <p>Pontes Flutuantes</p>
-                                    <p>Estruturas Nauticas</p>
+                                    <p>Estruturas Náuticas</p>
                                 </div>
                             </article>
                         </div>
@@ -107,23 +187,26 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#famiglia-valduga'">
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
-    <section id="famiglia-valduga">
-        <p class="section__text__p1"></p> <!-- Só deixei essa linha para ter o padding top do parágrafo 'p' -->
-        <h1 class="title">Famiglia Valduga</h1>
-        <div class="valduga-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="valduga-sub-title">Vinhos</h2>
-                    <div class="article-container">
-                        <img src="./assets/wine.png" alt="Vinhos" class="article-pic">
-                        <p>Descrição Vinhos</p> <!-- Colocar a descrição dos vinhos aqui -->
-                    </div>
-                </div>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Simone profile picture">
+        </div>
+        <div class="section__text">
+            <h1 class="title-perfil">Simone Von Spitzenberger</h1>
+            <p class="section__text__p2">Engenheira Civil</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-simone.pdf')">Baixar Currículo</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/simone-von-spitzenberger-a2164131/'">   
             </div>
         </div>
-    </section>
+    </section>    
+    
     <script src="app.js"></script>
 </body>
 </html>
